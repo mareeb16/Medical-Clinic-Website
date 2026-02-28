@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="logo">Medi<span class="highlight">Care</span>.</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-buttons">
+        <a href="#contact" class="btn btn-primary">Book Appointment</a>
+    </div>
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Your Health Is Our <span class="highlight">Priority</span></h1>
+        <p>Expert medical care with a human touch. We provide the best services for you and your family.</p>
+        <div class="hero-btns">
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+            <a href="#services" class="btn btn-secondary">View Services</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.avif" alt="Doctor">
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="section-header">
+        <h2>Our Services</h2>
+        <p>We offer a wide range of medical services.</p>
+    </div>
+    <div class="service-grid">
+        <div class="service-card">
+            <i class="fas fa-heartbeat"></i>
+            <h3>Cardiology</h3>
+            <p>Comprehensive heart care and checkups.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-user-md"></i>
+            <h3>General Checkup</h3>
+            <p>Full body diagnosis and treatment.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-tooth"></i>
+            <h3>Dental Care</h3>
+            <p>Modern dentistry for a perfect smile.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-eye"></i>
+            <h3>Eye Care</h3>
+            <p>Professional vision correction.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Doctors Section -->
+<section id="doctors" class="doctors">
+    <div class="section-header">
+        <h2>Meet Our Specialists</h2>
+    </div>
+    <div class="doctor-grid">
+        <div class="doctor-card">
+            <div class="doc-img" style="background-image: url('https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80');"></div>
+            <h3>Dr. Sarah</h3>
+            <span>Cardiologist</span>
+        </div>
+        <div class="doctor-card">
+            <div class="doc-img" style="background-image: url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80');"></div>
+            <h3>Dr. James</h3>
+            <span>Neurologist</span>
+        </div>
+        <div class="doctor-card">
+            <div class="doc-img" style="background-image: url('https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=400&q=80');"></div>
+            <h3>Dr. Emily</h3>
+            <span>Dermatologist</span>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Book Appointment</h2>
+            <p>Fill the form and we will get back to you.</p>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span> M.A Jinnah Road ,Karachi ,Pakistan</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <span>+92 334 5640324</span>
+            </div>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <select>
+                <option>Select Department</option>
+                <option>Cardiology</option>
+                <option>Dental</option>
+                <option>General</option>
+            </select>
+            <textarea placeholder="Message" rows="4"></textarea>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 MediCare Clinic. All rights reserved.</p>
+</footer>
+
+<script>
+    // Mobile Menu Toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    });
+</script>
+
+
+</body>
+</html>
